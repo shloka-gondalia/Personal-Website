@@ -6,7 +6,6 @@
 
 <head>
 
-<!--<meta http-equiv="Refresh" content="0; url=https://shloka-gondalia.github.io/Maintenance-Page/"/>-->
 
 <script type='text/javascript'>
 	//using "replace" removes the current page from browser history
@@ -36,16 +35,18 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800&display=swap" rel="stylesheet">
 
-
 <!--<link rel="stylesheet" href="fonts/fontawesome-free/css/all.min.css">-->
 <link rel="stylesheet" type="text/css" href="css/plugins.css" />
 <link rel="stylesheet" type="text/css" href="css/arlo.css" />
 <link rel="stylesheet" type="text/css" href="css/prism.css" />
+<link rel="stylesheet" href="fonts/css/all.css"/>
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+
 <!-- /STYLES -->
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="js/pace.js"></script>
-<script src="https://kit.fontawesome.com/05714d4211.js" crossorigin="anonymous"></script>
+<!--<script defer src="fonts/js/all.js"></script>-->
+<!--<script src="https://kit.fontawesome.com/05714d4211.js" crossorigin="anonymous"></script>-->
 
 <script src="js/numscroller-1.0.js"></script>
 <script src="js/prism.js"></script>
@@ -53,45 +54,15 @@
 </head>
 
 <body>
+	<div id="loading"></div>
 
-    <!--Loading Animation/Preloader
-    
-    <div id="preloader">
-        <div class="p">LOADING</div>
-    </div>
-
-    <script>
-
-    paceOptions = {
-    ajax: true,
-    document: true,
-    eventLag: false
-    };
-
-    Pace.on('done', function() {
-    $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
-
-
-    $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
-
-    TweenMax.from(".title", 2, {
-         delay: 1.8,
-              y: 10,
-              opacity: 0,
-              ease: Expo.easeInOut
-        })
-    });
-
-    </script>
-    /Preloader-->
-
-    <!-- PRELOADER -->
+    <!-- PRELOADER
 	<div class="arlo_tm_preloader">
 		<div class="spinner_wrap">
 			<div class="spinner"></div>
 		</div>
 	</div>
-	<!-- /PRELOADER -->
+	/PRELOADER -->
 
 <!-- WRAPPER ALL -->
 <div class="arlo_tm_all_wrap">
@@ -103,7 +74,7 @@
 				<div class="container">
 					<div class="topbar_in">
 						<div class="logo">
-							<a href="#"><img src="images/Black Logo.png" alt="" height=63 width=35/></a>
+							<a href="https://shlokgondalia.me"><img src="images/Black Logo.png" alt="" height=63 width=35/></a>
 						</div>
 						<div class="trigger">
 							<a href="#">
@@ -139,7 +110,7 @@
 		<div class="arlo_tm_leftpart">
 			<div class="inner">
 				<div class="logo">
-                    <a class="dark" href="#"><img src="images/Black Logo.png" style="margin-left: 70%; margin-right: 70%;" alt="" /></a>
+                    <a class="dark" href="https://shlokgondalia.me"><img src="images/Black Logo.png" style="margin-left: 70%; margin-right: 70%;" alt="" /></a>
                 </div>
                 
 				<div class="menu scrollable">
@@ -159,13 +130,13 @@
 				<div class="bottom">
 					<div class="social">
 						<ul>
-                            <li><a href="https://www.linkedin.com/in/shlok-gondalia" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-                            <li><a href="#"><i class="fab fa-github fa-2x"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/shlok-gondalia" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+							<li><a href="https://colostate.joinhandshake.com/users/15158530" target="_blank"><i class="fas fa-handshake fa-2x"></i></a></li>
+                            <li><a href="https://github.com/shloka-gondalia" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
                             <li><a href="mailto:shlok@rams.colostate.edu"><i class="far fa-envelope fa-2x"></i></a></li>
                             <li><a href="mailto:shloka.gondalia@gmail.com"><i class="fas fa-envelope fa-2x"></i></a></li>
-							<li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+							<li><a href="https://www.facebook.com/shloka.gondalia" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                            <li><a href="https://www.instagram.com/shlok_gondalia/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -270,13 +241,17 @@
 													<i class="fas fa-thumbs-up"></i>
 													<span><label>Interests:</label> Coding, Playing PC Games, Learning new things about computers, Watching Movies and Biking.</span>
 												</li>
+												<li>
+													<i class="fas fa-map-marked-alt"></i>
+													<span><label>Location:</label> <a class="href_location" href="#">1113 W Plum St, Fort Collins, CO-80521</a></span>
+                                                </li>
 											</ul>
 										</div>
 										<div class="buttons">
 											<ul style="text-align: center;">
-												<li><a href="#"><span><i class="fas fa-download fa-1x"></i> Resume</span></a></li>
+												<li><a href="Documents/Resume.pdf" target="_blank"><span><i class="fas fa-download fa-1x"></i> Resume</span></a></li>
                                                 <li><a href="https://www.linkedin.com/in/shlok-gondalia" target="_blank"><span><i class="fab fa-linkedin fa-1x"></i> Linkedin</span></a></li>
-                                                <li><a href="" target="_blank"><span><i class="fab fa-github fa-1x"></i> GitHub</span></a></li>
+                                                <li><a href="https://github.com/shloka-gondalia" target="_blank"><span><i class="fab fa-github fa-1x"></i> GitHub</span></a></li>
 											</ul>
 										</div>
 									</div>
@@ -450,8 +425,8 @@
 												</div>
 											</div>
 											<div class="read_more buttons" style="text-align: center;">
-												<a href="#"><span><i class="fab fa-google-drive fa-1x"></i> Link to Fall 2019 Research Report</span></a>
-												<a href="#"><span><i class="fab fa-google-drive fa-1x"></i> Link to Fall 2019 Research Presentation</span></a>
+												<a href="Documents/Research Report.pdf" target="_blank"><span><i class="fas fa-file-pdf fa-1x"></i> Link to Fall 2019 Research Report</span></a>
+												<a href="Documents/Research Presentation.pdf" target="_blank"><span><i class="fas fa-file-pdf fa-1x"></i> Link to Fall 2019 Research Presentation</span></a>
 												<a href="mailto:shlok@rams.colostate.edu"><span><i class="fab fa-github fa-1x"></i> Request Access to Research Repository</span></a>
 											</div>
 										</div>
@@ -593,7 +568,7 @@
 												<span>CS 165</span>
 											</div>
 											<div class="title">
-												<h5>CS2--Data Structures</h5>
+												<h5>CS2 -- Data Structures</h5>
 												<h7>Spring 2019 Semester</h7>
 											</div>
 											<div class="text">
@@ -613,7 +588,7 @@
 												<span>CS 163</span>
 											</div>
 											<div class="title">
-												<h5>CS1--Prior Programming Experience</h5>
+												<h5>CS1 -- No Prior Programming Experience</h5>
 												<h7>Fall 2018 Semester</h7>
 											</div>
 											<div class="text">
@@ -750,7 +725,7 @@
 													I got to learn a learn a lot about JavaScript and CSS.</p>
 											</div>
 											<div class="read_more projectbuttons" style="text-align: center;">
-												<a href="https://catalog.colostate.edu/search/?P=CS%20220" target="_blank"><span><i class="fas fa-external-link-square-alt fa-1x"></i> Personal Website</span></a>
+												<a href="https://shlokgondalia.me" target="_blank"><span><i class="fas fa-external-link-square-alt fa-1x"></i> Personal Website</span></a>
 											</div>
 											<div class="gitpread_more gitpbuttons" style="text-align: center;">
 												<a href="mailto:shlok@rams.colostate.edu" target="_blank"><span><i class="fab fa-github fa-1x"></i> Request Access</span></a>
@@ -778,7 +753,7 @@
 										<div class="right wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
 
 											<div class="buttons" style="text-align: center; margin-bottom: 50px;">
-												<a href="javascript:void(0)"><span><i class="fas fa-download fa-1x"></i> Unofficial Transcript</span></a>
+												<a href="Documents/Unoffical_Transcript.pdf" target="_blank"><span><i class="fas fa-download fa-1x"></i> Unofficial Transcript</span></a>
 											</div>
 
 											<div class="arlo_progress">
@@ -916,32 +891,40 @@
 										<div class="about_short_contact_wrap">
 											<ul>
 												<li>
-													<img class="svg" src="img/svg/placeholder.svg" alt="" />
-													<span><label>Location:</label><a class="href_location" href="#">11 Ave, New York, USA</a></span>
+													<i class="fas fa-link" style="min-width: 25px;"></i>
+													<span><label>Website:</label><a href="https://shlokgondalia.me" target="_blank">Shlok Gondalia</a></span>
 												</li>
 												<li>
-													<img class="svg" src="img/svg/phone-call.svg" alt="" />
-													<span><label>Phone:</label> <a href="tel:+77 022 177 05 05">+77 022 177 05 05</a></span>
+													<i class="fab fa-linkedin-in" style="min-width: 25px;"></i>
+													<span><label>Linkedin:</label><a href="https://www.linkedin.com/in/shlok-gondalia" target="_blank">shlok-gondalia</a></span>
 												</li>
 												<li>
-													<img class="svg" src="img/svg/internet.svg" alt="" />
-													<span><label>Website:</label> <a href="https://mydomain.com" target="_blank">myaddress.com</a></span>
+													<i class="fas fa-handshake" style="min-width: 25px;"></i>
+													<span><label>Handshake:</label><a href="https://colostate.joinhandshake.com/users/15158530" target="_blank">Shlok Gondalia</a></span>
 												</li>
 												<li>
-													<img class="svg" src="img/svg/twitter.svg" alt="" />
-													<span><label>Twitter:</label> <a href="https://twitter.com" target="_blank">@mytwitternick</a></span>
+													<i class="fas fa-envelope" style="min-width: 25px;"></i>
+													<span><label>Mail:</label> <a href="mailto:shlok@rams.colostate.edu">shlok&#64;rams.colostate.edu</a></span>
+                                                </li>
+                                                <li>
+													<i class="far fa-envelope" style="min-width: 25px;"></i>
+													<span><label>Mail:</label> <a href="mailto:shloka.gondalia@gmail.com">shloka.gondalia&#64;gmail.com</a></span>
+                                                </li>
+												<li>
+													<i class="fas fa-mobile" style="min-width: 25px;"></i>
+													<span><label>Phone:</label><a href="tel:+19704813790">+1 (970)-481-3790</a></span>
 												</li>
 												<li>
-													<img class="svg" src="img/svg/facebook.svg" alt="" />
-													<span><label>Facebook:</label> <a href="https://fb.me/@facebooknick" target="_blank">@myfacebooknick</a></span>
+													<i class="fab fa-facebook-f" style="min-width: 25px;"></i>
+													<span><label>Facebook:</label><a href="https://www.facebook.com/shloka.gondalia" target="_blank">@shloka.gondalia</a></span>
 												</li>
 												<li>
-													<img class="svg" src="img/svg/instagram.svg" alt="" />
-													<span><label>Instagram:</label> <a href="https://www.instagram.com" target="_blank">@myinstagramnick</a></span>
+													<i class="fab fa-instagram" style="min-width: 25px;"></i>
+													<span><label>Instagram:</label><a href="https://www.instagram.com/shlok_gondalia/" target="_blank">@shlok_gondalia</a></span>
 												</li>
 												<li>
-													<img class="svg" src="img/svg/whatsapp.svg" alt="" />
-													<span><label>WhatsApp:</label> <a href="https://wa.me/@whatsappNickName" target="_blank">@mywhatsappnick</a></span>
+													<i class="fas fa-map-marked-alt" style="min-width: 25px;"></i>
+													<span><label>Location:</label><a class="href_location" href="#">1113 W Plum St, Fort Collins, CO-80521</a></span>
 												</li>
 											</ul>
 										</div>
@@ -959,7 +942,8 @@
 						<div class="container">
 							<div class="footer_inner">
 								<div class="copyright wow fadeInLeft" data-wow-duration="0.8s">
-									<p>Website Designed by Shlok Gondalia</a></p>
+									<p>Website Designed by Shlok Gondalia</p>
+									<p>Copyright <i class="far fa-copyright"></i> 2020 Shlok Gondalia. Code released under the <a href="https://github.com/shloka-gondalia/Personal-Website/blob/master/LICENSE" target="_blank">MIT</a> license.</p>
 								</div>
 								<div class="top wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
 									<span></span>
@@ -984,6 +968,14 @@
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
 <script src="js/clipboard.min.js"></script>
+
+<!--PreLoading Script-->
+<script>
+	jQuery(document).ready(function() {
+		jQuery('#loading').fadeOut();
+	});
+</script>
+
 <!-- /SCRIPTS -->
 
 </body>

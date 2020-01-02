@@ -843,14 +843,15 @@ function arlo_tm_rightpart_padding(){
 		}
 	}
 
+//Smooth Scroll
 
 	$('.smooth-goto').on('click', function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 2000);
 		return false;
 	});
 
 	/*Without Decimals*/
-	jQuery(         
+	/*jQuery(         
 		function($)
 		{
 			var banderaEstandar= true;
@@ -875,7 +876,7 @@ function arlo_tm_rightpart_padding(){
 				}
 			})
 		}
-	);
+	);*/
 
 	/*jQuery(    
 		function startCounter(){
@@ -893,3 +894,6 @@ function arlo_tm_rightpart_padding(){
 		}	
 
 	);*/
+
+
+	
