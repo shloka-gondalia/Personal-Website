@@ -850,6 +850,11 @@ function arlo_tm_rightpart_padding(){
 		return false;
 	});
 
+	$('.icon-scroll').on('click', function() {  
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 50});
+		return false;
+	});
+
 	/*Without Decimals*/
 	/*jQuery(         
 		function($)
