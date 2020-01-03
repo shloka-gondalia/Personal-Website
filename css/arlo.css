@@ -868,7 +868,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 .arlo_tm_about ul li label{
 	font-weight: 500;
 	color: #000;
-	min-width: 85px;
+	min-width: 90px;
 	display: inline-block;
 }
 .arlo_tm_about .about_short_contact_wrap ul li a{
@@ -1294,7 +1294,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
     height: 100%;
     left: -25%;
     width: 0%;
-    background-color: white;
+	background-color: white;
     transform: skew(50deg);
 	transition-duration: .6s;
 	border-radius: 0px;
