@@ -3060,6 +3060,6 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background: #000 url('https://media.giphy.com/media/ZLeczmapXFUqc/giphy.gif') no-repeat center center;
+	background: #000 url('../images/giphy.gif') no-repeat center center;
 	z-index: 9999;
 }
