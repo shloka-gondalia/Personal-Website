@@ -843,7 +843,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 .arlo_tm_about .rightbox .text{margin-bottom: 23px;}
 .arlo_tm_about .rightbox .text span{
 	color: #ff4b36;
-	font-style: italic;
+	font-weight: 500;
 }
 .arlo_tm_about .about_short_contact_wrap{
 	width: 100%;
