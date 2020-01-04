@@ -917,6 +917,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	overflow: hidden;
 	border-radius: 5px;
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 .arlo_tm_about .buttons ul li a:before{
 	position: absolute;
@@ -1095,6 +1096,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	overflow: hidden;
 	border-radius: 5px;
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 .arlo_tm_services .buttons a:before{
 	position: absolute;
@@ -1286,6 +1288,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	overflow: hidden;
 	border-radius: 5px;
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 .arlo_tm_services .coursebuttons a:before{
 	position: absolute;
@@ -1340,6 +1343,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	overflow: hidden;
 	border-radius: 5px;
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 .arlo_tm_services .gitbuttons a:before{
 	position: absolute;
@@ -1533,6 +1537,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	overflow: hidden;
 	border-radius: 5px;
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 .arlo_tm_services .projectbuttons a:before{
 	position: absolute;
@@ -1580,6 +1585,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	overflow: hidden;
 	border-radius: 5px;
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 .arlo_tm_services .gitpbuttons a:before{
 	position: absolute;
@@ -1772,6 +1778,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	overflow: hidden;
 	border-radius: 5px;
 	font-weight: 700;
+	margin-bottom: 5px;
 }
 .arlo_tm_services .awardsbuttons a:before{
 	position: absolute;
