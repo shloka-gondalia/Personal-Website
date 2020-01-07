@@ -16,8 +16,7 @@
 html {
 	overflow-x: hidden;
 	padding: 0px;
-	margin: 0px
-	scroll-behavior: smooth; 
+	margin: 0px;
 }
 body{
 	font-family: "Roboto";
@@ -2258,7 +2257,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 138px;
+	/*padding-top: 138px;*/
 }
 .arlo_tm_contact{
 	width: 100%;

@@ -11,6 +11,12 @@
         $(document).scrollzipInit();
         $(document).rollerInit();
     });
+    /*$(document).ready(function(){
+        $(document).scrollzipInit();
+    });
+    $(window).on("load",function(){
+        $(document).rollerInit();
+    });*/
     $(window).on("load scroll resize", function(){
         $('.numscroller').scrollzip({
             showFunction    :   function() {
@@ -22,6 +28,11 @@
     $.fn.scrollzipInit=function(){
         $('body').prepend("<div style='position:fixed;top:0px;left:0px;width:0;height:0;' id='scrollzipPoint'></div>" );
     };
+    /*$.fn.scrollzipInit = function () {
+        if (!($('#scrollzipPoint'))) {
+            $('body').prepend("<div style='position:fixed;top:0px;left:0px;width:0;height:0;' id='scrollzipPoint'></div>");
+        }
+    };*/
     $.fn.rollerInit=function(){
         var i=0;
         $('.numscroller').each(function() {
