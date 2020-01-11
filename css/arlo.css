@@ -2910,16 +2910,17 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 /*---------------------------------------------------*/
 /*	16) ARLO MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
+@media (max-width: 1639px) {
+	.arlo_tm_about .about_short_contact_wrap ul li{width: 100%;}
+}
 
 @media (max-width: 1600px) {
 	.arlo_tm_rightpart{padding-left: 400px;}
 	.arlo_tm_leftpart{width: 400px;}
-
 }
 @media (max-width: 1400px) {
 	.arlo_tm_about{margin-bottom: 80px;}
-	.arlo_tm_about .leftbox{display: none;}
-	.arlo_tm_about .rightbox{padding-left: 0px;width: 100%;}
+
 	.arlo_tm_services .service_inner ul li{width: 100%;}
 	.arlo_tm_services .course_inner ul li{width: 50%;}
 	.arlo_tm_services .awards_inner ul li{width: 50%;}
@@ -2945,6 +2946,10 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	.arlo_tm_contact .contact_inner .right{width: 100%;}
 	
 	.arlo_tm_services .project_inner ul li{width: 100%;}
+
+	/*Moved from 1400px*/
+	.arlo_tm_about .leftbox{display: none;}
+	.arlo_tm_about .rightbox{padding-left: 0px;width: 100%;}
 	
 }
 @media (max-width: 1040px) {
