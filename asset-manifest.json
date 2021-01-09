@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Personal-Website/static/css/main.ca4bf36c.chunk.css",
+    "main.js": "/Personal-Website/static/js/main.cad14562.chunk.js",
+    "main.js.map": "/Personal-Website/static/js/main.cad14562.chunk.js.map",
+    "runtime-main.js": "/Personal-Website/static/js/runtime-main.5f72f3bc.js",
+    "runtime-main.js.map": "/Personal-Website/static/js/runtime-main.5f72f3bc.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/Personal-Website/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.eaf856e2.chunk.js": "/Personal-Website/static/js/2.eaf856e2.chunk.js",
+    "static/js/2.eaf856e2.chunk.js.map": "/Personal-Website/static/js/2.eaf856e2.chunk.js.map",
+    "index.html": "/Personal-Website/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/Personal-Website/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.ca4bf36c.chunk.css.map": "/Personal-Website/static/css/main.ca4bf36c.chunk.css.map",
+    "static/js/2.eaf856e2.chunk.js.LICENSE.txt": "/Personal-Website/static/js/2.eaf856e2.chunk.js.LICENSE.txt",
+    "static/media/About_Me.8c9263e2.jpg": "/Personal-Website/static/media/About_Me.8c9263e2.jpg",
+    "static/media/arlo.css": "/Personal-Website/static/media/giphy.520e8724.gif",
+    "static/media/Profile.ddf4c13b.jpg": "/Personal-Website/static/media/Profile.ddf4c13b.jpg",
+    "static/media/Research_Presentation_FA19.2beaa189.pdf": "/Personal-Website/static/media/Research_Presentation_FA19.2beaa189.pdf",
+    "static/media/Research_Presentation_SP20.b39bcb50.pdf": "/Personal-Website/static/media/Research_Presentation_SP20.b39bcb50.pdf",
+    "static/media/Research_Report_FA19.219359d0.pdf": "/Personal-Website/static/media/Research_Report_FA19.219359d0.pdf",
+    "static/media/Resume.b433aea0.pdf": "/Personal-Website/static/media/Resume.b433aea0.pdf",
+    "static/media/Unoffical_Transcript.bde42349.pdf": "/Personal-Website/static/media/Unoffical_Transcript.bde42349.pdf",
+    "static/media/all.css": "/Personal-Website/static/media/fa-solid-900.d12229bd.eot",
+    "static/media/plugins.css": "/Personal-Website/static/media/ytp-regular.b109efec.eot"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f72f3bc.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.eaf856e2.chunk.js",
+    "static/css/main.ca4bf36c.chunk.css",
+    "static/js/main.cad14562.chunk.js"
+  ]
+}

@@ -10,7 +10,12 @@ jQuery(document).ready(function(){
 	"use strict";
 	
 	// here all ready functions
-	
+	arlo_progress_bar();
+	iconScroll();
+	smoothGoTo();
+	rotate();
+	updateOwl();
+
 	arlo_tm_anchor();
 	arlo_tm_down();
 	arlo_tm_imgtosvg();
@@ -48,14 +53,19 @@ jQuery(document).ready(function(){
 	jQuery(window).on('scroll',function(){
 		arlo_tm_hero_effect();
 	});
-	
-	jQuery(window).load('body', function(){
-		setTimeout(function(){
-        jQuery('.arlo_tm_preloader').addClass('loaded');
-    }, 1000);
+
+	jQuery(window).on('load', function(){
+		load();
 	});
 	
+	
 });
+
+function load(){
+	setTimeout(function(){
+        jQuery('.arlo_tm_preloader').addClass('loaded');
+    }, 1000);
+}
 
 // -----------------------------------------------------
 // ---------------   FUNCTIONS    ----------------------
@@ -260,6 +270,10 @@ function arlo_tm_switcher(){
 			setTimeout(function(){arlo_tm_jarallax();},300);
 		
 		}
+		setTimeout(function(){
+			updateOwl();
+		}, 300)
+		
 		return false;
 	});
 }
@@ -272,22 +286,22 @@ function arlo_mobile_menu(){
 	
 	"use strict";
 		
-	var trigger			= jQuery('.arlo_tm_topbar .topbar_inner .trigger');
-	var triggerClose	= trigger.find('a .close');
-	var triggerMenu		= trigger.find('a .menu');
+	var trigger			= jQuery('.arlo_tm_topbar .topbar_inner .trigger2');
+	// var triggerClose	= trigger.find('a .close');
+	// var triggerMenu		= trigger.find('a .menu');
 	var dropdown		= jQuery('.arlo_tm_topbar .dropdown');
 	
 	trigger.on('click',function(){
 		var element	= jQuery(this);
 		if(element.hasClass('opened')){
 			element.removeClass('opened');
-			triggerMenu.removeClass('closed');
-			triggerClose.removeClass('opened');
+			// triggerMenu.removeClass('closed');
+			// triggerClose.removeClass('opened');
 			dropdown.slideUp();
 		}else{
 			element.addClass('opened');
-			triggerMenu.addClass('closed');
-			triggerClose.addClass('opened');
+			// triggerMenu.addClass('closed');
+			// triggerClose.addClass('opened');
 			dropdown.slideDown();
 		}
 		return false;
@@ -322,7 +336,7 @@ function arlo_tm_animate_text(){
 	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["a Student", "a Programmer", "an Innovator", "an Engineer", "a Leader"],
+			strings: ["a Student", "a Programmer", "an Innovator", "an Engineer", "a Leader", "a Team Player"],
 			loop: true,
 			startDelay: 100,
 			backDelay: 2e3
@@ -373,6 +387,7 @@ function tdProgress(container){
 	});
 }
 
+function arlo_progress_bar(){
 	jQuery('.arlo_progress').each(function() {
 
 		"use strict";
@@ -380,6 +395,9 @@ function tdProgress(container){
 		var pWrap 			= jQuery(this);
 		pWrap.waypoint({handler: function(){tdProgress(pWrap);},offset:'90%'});	
 	});
+}
+
+	
 
 // -------------------------------------------------
 // -----------------    PORTFOLIO    ---------------
@@ -561,16 +579,16 @@ function arlo_tm_contact_form(){
 // -----------------------------------------------------
 
 function arlo_tm_location(){
-		var button		= jQuery('.href_location');
-		button.on('click',function(){
-			var element		= jQuery(this);
-			var address		= element.text();
-			address			= address.replace(/\ /g,'+');
-			var text		= 'https://maps.google.com?q=';
-			window.open(text+address);
-			return false;
-		});
-	}
+	var button		= jQuery('.href_location');
+	button.on('click',function(){
+		var element		= jQuery(this);
+		var address		= element.text();
+		address			= address.replace(/\ /g,'+');
+		var text		= 'https://maps.google.com?q=';
+		window.open(text+address);
+		return false;
+	});
+}
 
 // -------------------------------------------------
 // -------------  RIPPLE  --------------------------
@@ -845,60 +863,54 @@ function arlo_tm_rightpart_padding(){
 
 //Smooth Scroll
 
-	$('.smooth-goto').on('click', function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 2000);
-		return false;
-	});
-
-	$('.icon-scroll').on('click', function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 50});
-		return false;
-	});
-
-	/*Without Decimals*/
-	/*jQuery(         
-		function($)
-		{
-			var banderaEstandar= true;
-			$('#vista').on('scroll', function()
-			{
-				if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight && banderaEstandar)
-				{
-					$('.count').each(function () {
-					$(this).prop('Counter',0).animate(
-					{
-						Counter: $(this).text() + "+"
-					}, 
-					{
-						duration: 1000,
-						easing: 'swing',
-						step: function (now) {
-						$(this).text(Math.ceil(now));
-					}
-					});
-					});
-					banderaEstandar=false;
-				}
-			})
-		}
-	);*/
-
-	/*jQuery(    
-		function startCounter(){
-			$('.counter').each(function (index) {
-				$(this).prop('Counter',0).animate({
-					Counter: $(this).text()
-				}, {
-					duration: 2000,
-					easing: 'swing',
-					step: function (now) {
-						$(this).text(Math.round(now*10)/10);
-					}
-				});
-			});
-		}	
-
-	);*/
-
-
+function smoothGoTo(){
+	"use strict";
 	
+	jQuery('.smooth-goto').on('click', function() {  
+		jQuery('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 2000);
+		return false;
+	});
+}
+
+function iconScroll(){
+	"use strict";
+	
+	jQuery('.icon-scroll').on('click', function() {  
+		jQuery('html, body').animate({scrollTop: $(this.hash).offset().top - 50});
+		return false;
+	});
+}
+
+function rotate(){
+	"use strict";
+
+	jQuery(".rotate").click(function(){
+		jQuery(this).toggleClass("down")  ; 
+	})
+}
+
+function updateOwl(){
+	var $carousel = jQuery('.owl-carousel');  
+    if($carousel.length>0)  {   
+        $carousel.data('owl.carousel')._invalidated.width = true;
+        $carousel.trigger('refresh.owl.carousel');
+	}
+	// jQuery(".owl-carousel").each(function() {
+	// 	jQuery(this).data('owl.carousel').onResize();
+	// 	jQuery(this).trigger('refresh.owl.carousel');
+	// });
+}
+
+function arlo_mobile_menu_close(){
+	
+	"use strict";
+		
+	var trigger			= jQuery('.arlo_tm_topbar .topbar_inner .trigger2');
+	var dropdown		= jQuery('.arlo_tm_topbar .dropdown');
+	
+	trigger.removeClass('opened');
+	dropdown.slideUp();
+	
+	return false;
+	
+}
