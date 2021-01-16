@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4420ff6e.chunk.css",
-    "main.js": "/static/js/main.96317bb3.chunk.js",
-    "main.js.map": "/static/js/main.96317bb3.chunk.js.map",
+    "main.js": "/static/js/main.2924185a.chunk.js",
+    "main.js.map": "/static/js/main.2924185a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fa961822.js",
     "runtime-main.js.map": "/static/js/runtime-main.fa961822.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/Research_Presentation_FA19.2beaa189.pdf": "/static/media/Research_Presentation_FA19.2beaa189.pdf",
     "static/media/Research_Presentation_SP20.b39bcb50.pdf": "/static/media/Research_Presentation_SP20.b39bcb50.pdf",
     "static/media/Research_Report_FA19.219359d0.pdf": "/static/media/Research_Report_FA19.219359d0.pdf",
-    "static/media/Resume.6a1195c7.pdf": "/static/media/Resume.6a1195c7.pdf",
+    "static/media/Resume.d3ae4f97.pdf": "/static/media/Resume.d3ae4f97.pdf",
     "static/media/Unoffical_Transcript.bde42349.pdf": "/static/media/Unoffical_Transcript.bde42349.pdf",
     "static/media/all.css": "/static/media/fa-solid-900.d12229bd.eot",
     "static/media/plugins.css": "/static/media/ytp-regular.b109efec.eot"
@@ -28,6 +28,6 @@
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.42946d05.chunk.js",
     "static/css/main.4420ff6e.chunk.css",
-    "static/js/main.96317bb3.chunk.js"
+    "static/js/main.2924185a.chunk.js"
   ]
 }
