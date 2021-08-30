@@ -1,33 +1,33 @@
 {
   "files": {
     "main.css": "/static/css/main.081398bc.chunk.css",
-    "main.js": "/static/js/main.86c41f22.chunk.js",
-    "main.js.map": "/static/js/main.86c41f22.chunk.js.map",
+    "main.js": "/static/js/main.9bb585a2.chunk.js",
+    "main.js.map": "/static/js/main.9bb585a2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fa961822.js",
     "runtime-main.js.map": "/static/js/runtime-main.fa961822.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.42946d05.chunk.js": "/static/js/2.42946d05.chunk.js",
-    "static/js/2.42946d05.chunk.js.map": "/static/js/2.42946d05.chunk.js.map",
+    "static/js/2.7f5d72f9.chunk.js": "/static/js/2.7f5d72f9.chunk.js",
+    "static/js/2.7f5d72f9.chunk.js.map": "/static/js/2.7f5d72f9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
     "static/css/main.081398bc.chunk.css.map": "/static/css/main.081398bc.chunk.css.map",
-    "static/js/2.42946d05.chunk.js.LICENSE.txt": "/static/js/2.42946d05.chunk.js.LICENSE.txt",
+    "static/js/2.7f5d72f9.chunk.js.LICENSE.txt": "/static/js/2.7f5d72f9.chunk.js.LICENSE.txt",
     "static/media/About_Me.60ed068b.jpg": "/static/media/About_Me.60ed068b.jpg",
     "static/media/arlo.css": "/static/media/giphy.520e8724.gif",
     "static/media/Profile.ddf4c13b.jpg": "/static/media/Profile.ddf4c13b.jpg",
     "static/media/Research_Presentation_FA19.2beaa189.pdf": "/static/media/Research_Presentation_FA19.2beaa189.pdf",
     "static/media/Research_Presentation_SP20.b39bcb50.pdf": "/static/media/Research_Presentation_SP20.b39bcb50.pdf",
     "static/media/Research_Report_FA19.219359d0.pdf": "/static/media/Research_Report_FA19.219359d0.pdf",
-    "static/media/Resume.d576ee0a.pdf": "/static/media/Resume.d576ee0a.pdf",
-    "static/media/Unoffical_Transcript.07d99528.pdf": "/static/media/Unoffical_Transcript.07d99528.pdf",
+    "static/media/Resume.e4b1fbfb.pdf": "/static/media/Resume.e4b1fbfb.pdf",
+    "static/media/Unoffical_Transcript.f6889201.pdf": "/static/media/Unoffical_Transcript.f6889201.pdf",
     "static/media/all.css": "/static/media/fa-solid-900.d12229bd.eot",
     "static/media/plugins.css": "/static/media/ytp-regular.b109efec.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.fa961822.js",
     "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.42946d05.chunk.js",
+    "static/js/2.7f5d72f9.chunk.js",
     "static/css/main.081398bc.chunk.css",
-    "static/js/main.86c41f22.chunk.js"
+    "static/js/main.9bb585a2.chunk.js"
   ]
 }
