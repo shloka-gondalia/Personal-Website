@@ -1,3 +1,3 @@
 License
 
-Copyright 2021 Shlok Gondalia. Code released under the [MIT](LICENSE) license.
+Copyright 2024 Shlok Gondalia. Code released under the [MIT](LICENSE) license.
