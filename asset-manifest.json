@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e6677d41.chunk.css",
-    "main.js": "/static/js/main.bdc89915.chunk.js",
-    "main.js.map": "/static/js/main.bdc89915.chunk.js.map",
+    "main.js": "/static/js/main.81c952b3.chunk.js",
+    "main.js.map": "/static/js/main.81c952b3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ffa87303.js",
     "runtime-main.js.map": "/static/js/runtime-main.ffa87303.js.map",
     "static/css/2.3fde6769.chunk.css": "/static/css/2.3fde6769.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/Research_Presentation_FA19.2beaa189.pdf": "/static/media/Research_Presentation_FA19.2beaa189.pdf",
     "static/media/Research_Presentation_SP20.b39bcb50.pdf": "/static/media/Research_Presentation_SP20.b39bcb50.pdf",
     "static/media/Research_Report_FA19.219359d0.pdf": "/static/media/Research_Report_FA19.219359d0.pdf",
-    "static/media/Shlok-Gondalia-Resume.cb2a4585.pdf": "/static/media/Shlok-Gondalia-Resume.cb2a4585.pdf",
+    "static/media/Shlok-Gondalia-Resume.ce882bb0.pdf": "/static/media/Shlok-Gondalia-Resume.ce882bb0.pdf",
     "static/media/Unoffical_Transcript.4c87dfb6.pdf": "/static/media/Unoffical_Transcript.4c87dfb6.pdf",
     "static/media/all.css": "/static/media/fa-solid-900.d12229bd.eot",
     "static/media/plugins.css": "/static/media/ytp-regular.b109efec.eot"
@@ -28,6 +28,6 @@
     "static/css/2.3fde6769.chunk.css",
     "static/js/2.55655933.chunk.js",
     "static/css/main.e6677d41.chunk.css",
-    "static/js/main.bdc89915.chunk.js"
+    "static/js/main.81c952b3.chunk.js"
   ]
 }
