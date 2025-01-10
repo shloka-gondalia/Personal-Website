@@ -7,16 +7,11 @@
 * Copyright (c) 2014 
 */
 (function($){
-    $(window).on("load",function(){
+    $(document).ready(function(){
         $(document).scrollzipInit();
         $(document).rollerInit();
     });
-    /*$(document).ready(function(){
-        $(document).scrollzipInit();
-    });
-    $(window).on("load",function(){
-        $(document).rollerInit();
-    });*/
+
     $(window).on("load scroll resize", function(){
         $('.numscroller').scrollzip({
             showFunction    :   function() {
@@ -25,23 +20,24 @@
             wholeVisible    :     false,
         });
     });
-    $.fn.scrollzipInit=function(){
-        $('body').prepend("<div style='position:fixed;top:0px;left:0px;width:0;height:0;' id='scrollzipPoint'></div>" );
-    };
-    /*$.fn.scrollzipInit = function () {
-        if (!($('#scrollzipPoint'))) {
+
+    $.fn.scrollzipInit = function() {
+        // Ensure that scrollzipPoint is added only if it doesn't exist already
+        if (!$('#scrollzipPoint').length) {
             $('body').prepend("<div style='position:fixed;top:0px;left:0px;width:0;height:0;' id='scrollzipPoint'></div>");
         }
-    };*/
-    $.fn.rollerInit=function(){
-        var i=0;
+    };
+
+    $.fn.rollerInit = function() {
+        var i = 0;
         $('.numscroller').each(function() {
             i++;
-           $(this).attr('data-slno',i); 
-           $(this).addClass("roller-title-number-"+i);
-        });        
+            $(this).attr('data-slno', i); 
+            $(this).addClass("roller-title-number-" + i);
+        });
     };
-    $.fn.scrollzip = function(options){
+
+    $.fn.scrollzip = function(options) {
         var settings = $.extend({
             showFunction    : null,
             hideFunction    : null,
@@ -49,51 +45,67 @@
             wholeVisible    : false,
             hideShift       : 0,
         }, options);
-        return this.each(function(i,obj){
+
+        return this.each(function(i, obj) {
             $(this).addClass('scrollzip');
-            if ( $.isFunction( settings.showFunction ) ){
-                if(
-                    !$(this).hasClass('isShown')&&
-                    ($(window).outerHeight()+$('#scrollzipPoint').offset().top-settings.showShift)>($(this).offset().top+((settings.wholeVisible)?$(this).outerHeight():0))&&
-                    ($('#scrollzipPoint').offset().top+((settings.wholeVisible)?$(this).outerHeight():0))<($(this).outerHeight()+$(this).offset().top-settings.showShift)
-                ){
+            var $scrollzipPoint = $('#scrollzipPoint');
+            if ($scrollzipPoint.length === 0) {
+                console.error("scrollzipPoint element is missing.");
+                return;
+            }
+            
+            var zipPointOffset = $scrollzipPoint.offset();
+            if (!zipPointOffset) {
+                console.error("Unable to get the offset of scrollzipPoint.");
+                return;
+            }
+
+            var zipPointTop = zipPointOffset.top;
+
+            if ($.isFunction(settings.showFunction)) {
+                if (
+                    !$(this).hasClass('isShown') &&
+                    ($(window).outerHeight() + zipPointTop - settings.showShift) > ($(this).offset().top + ((settings.wholeVisible) ? $(this).outerHeight() : 0)) &&
+                    (zipPointTop + ((settings.wholeVisible) ? $(this).outerHeight() : 0)) < ($(this).outerHeight() + $(this).offset().top - settings.showShift)
+                ) {
                     $(this).addClass('isShown');
-                    settings.showFunction.call( this );
+                    settings.showFunction.call(this);
                 }
             }
-            if ( $.isFunction( settings.hideFunction ) ){
-                if(
-                    $(this).hasClass('isShown')&&
-                    (($(window).outerHeight()+$('#scrollzipPoint').offset().top-settings.hideShift)<($(this).offset().top+((settings.wholeVisible)?$(this).outerHeight():0))||
-                    ($('#scrollzipPoint').offset().top+((settings.wholeVisible)?$(this).outerHeight():0))>($(this).outerHeight()+$(this).offset().top-settings.hideShift))
-                ){
+
+            if ($.isFunction(settings.hideFunction)) {
+                if (
+                    $(this).hasClass('isShown') &&
+                    (($(window).outerHeight() + zipPointTop - settings.hideShift) < ($(this).offset().top + ((settings.wholeVisible) ? $(this).outerHeight() : 0)) ||
+                    (zipPointTop + ((settings.wholeVisible) ? $(this).outerHeight() : 0)) > ($(this).outerHeight() + $(this).offset().top - settings.hideShift))
+                ) {
                     $(this).removeClass('isShown');
-                    settings.hideFunction.call( this );
+                    settings.hideFunction.call(this);
                 }
             }
             return this;
         });
     };
-    function numberRoller(slno){
-            var min=$('.roller-title-number-'+slno).attr('data-min');
-            var max=$('.roller-title-number-'+slno).attr('data-max');
-            var timediff=$('.roller-title-number-'+slno).attr('data-delay');
-            var increment=$('.roller-title-number-'+slno).attr('data-increment');
-            var numdiff=max-min;
-            var timeout=(timediff*1000)/numdiff;
-            //if(numinc<10){
-                //increment=Math.floor((timediff*1000)/10);
-            //}//alert(increment);
-            numberRoll(slno,min,max,increment,timeout);
-            
+
+    function numberRoller(slno) {
+        var min = $('.roller-title-number-' + slno).attr('data-min');
+        var max = $('.roller-title-number-' + slno).attr('data-max');
+        var timediff = $('.roller-title-number-' + slno).attr('data-delay');
+        var increment = $('.roller-title-number-' + slno).attr('data-increment');
+        var numdiff = max - min;
+        var timeout = (timediff * 1000) / numdiff;
+        numberRoll(slno, min, max, increment, timeout);
     }
-    function numberRoll(slno,min,max,increment,timeout){//alert(slno+"="+min+"="+max+"="+increment+"="+timeout);
-        if(min<=max){
-            $('.roller-title-number-'+slno).html(min);
-            min=parseInt(min)+parseInt(increment);
-            setTimeout(function(){numberRoll(eval(slno),eval(min),eval(max),eval(increment),eval(timeout))},timeout);
-        }else{
-            $('.roller-title-number-'+slno).html(max);
+
+    function numberRoll(slno, min, max, increment, timeout) {
+        if (min <= max) {
+            $('.roller-title-number-' + slno).html(min);
+            min = parseInt(min) + parseInt(increment);
+            setTimeout(function() { 
+                numberRoll(slno, min, max, increment, timeout);
+            }, timeout);
+        } else {
+            $('.roller-title-number-' + slno).html(max);
         }
     }
 })(jQuery);
